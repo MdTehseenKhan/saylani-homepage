@@ -1,0 +1,219 @@
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+*:not(i) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.btn-success {
+    padding: 3px 6px;
+    font-size: small;
+}
+
+
+.p-10 { padding: 10px !important; }
+.pt-10 { padding-top: 10px !important; }
+.pb-10 { padding-bottom: 10px !important; }
+
+.p-15 { padding: 15px !important; }
+.pt-15 { padding-top: 15px !important; }
+.pb-15 { padding-bottom: 15px !important; }
+
+.mt-20 { margin-top: 20px !important; }
+.m-20 { margin: 20px !important; }
+
+.mb-30 { margin-bottom: 30px !important; }
+.p-30 { padding: 30px !important; }
+.pt-30 { padding-top: 30px !important; }
+.pb-30 { padding-bottom: 30px !important; }
+
+.pb-40 { padding-bottom: 40px !important; }
+
+.pt-70 { padding-top: 70px !important; }
+
+.mb-80 { margin-bottom: 80px !important; }
+.pb-80 { padding-bottom: 80px !important; }
+.pt-80 { padding-top: 80px !important; }
+
+
+.text-nsuccess { color: greenyellow; font-family: 'Merriweather', serif; }
+.valign-middle {
+    line-height: 1.5;
+}
+
+.line-bottom { position: relative; padding-bottom: 10px !important; }
+.line-bottom::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 50px;
+    height: 2px;
+    background: green;
+}
+
+.strike-bottom { position: relative; padding-bottom: 10px !important; margin-bottom: 20px;}
+.strike-bottom::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background: #555;
+}
+
+.title-blue{
+    color: dodgerblue;
+    font-weight: bold;
+    font-family: 'Merriweather', serif !important;
+}
+.title-green {
+    color: green;
+    font-weight: bold;
+    font-family: 'Merriweather', serif !important;
+}
+.text-green {
+    color: green;
+}
+
+.merriweather {
+    font-family: 'Merriweather', serif !important;
+}
+
+
+.dropdown-item a {
+    color: #000;
+    transition: .2s ease;
+}
+
+.dropdown-item:hover > a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+#news {
+    margin-top: 6px;
+    height:30px;
+    background: #444;
+}
+/* Introduction */
+.intro span {
+    text-transform: uppercase;
+    font-family: serif;
+    font-size: 2em;
+}
+
+.introPic {
+    position: relative;
+}
+
+.introPic::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-180%);
+    width: 36px;
+    height: 2px;
+    background: green;
+}
+
+.introPic::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(180%);
+    width: 36px;
+    height: 2px;
+    background: green;
+}
+/* Introduction End*/
+
+
+/* SECTION 3 */
+.quantity {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+.name{
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+/* SECTION 3 END*/
+
+/* #FOOTER */
+.connect-icons li {
+    display: inline-block !important;
+    background: dodgerblue;
+    border-radius: 100%;
+    padding: 5px 10px;
+    transition: .5s ease;
+}
+.connect-icons li:hover {
+    background: #0858a8;
+    color: honeydew;
+}
+/* #FOOTER END */
+
+@media screen and (min-width: 768px) {
+   
+    .nav-item > a.nav-link {
+        border-radius: 30px;
+        padding: 5px 12px!important;
+        transition: .5s;
+    }
+    .nav-item:hover > a.nav-link , .nav-item.active > a.nav-link {
+        color: #fff!important;
+        background: dodgerblue;
+    }
+
+    .dropdown-item:hover {
+        background: dodgerblue;
+    }
+
+    .dropdown-item:hover > a {
+        text-decoration: none;
+        color: #fff;
+        padding-left: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        width: 100%!important;
+        text-align: center;
+    }
+    .fa-angle-right {
+        transform: rotate(90deg);
+    }
+}
